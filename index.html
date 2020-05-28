@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Bideas</title>
+    <link rel="stylesheet" href="css/main.css?"/>
+</head>
+<body>
+<div id="bideas">
+    <header class="header">
+        <div class="header__top">
+            <div class="header__content flex bideas">
+                <a href="http://thesaftech.com" class="bideas__logo">
+                    <img src="img/logo.svg" alt="Bideas">
+                </a>
+                <nav class="header__desk-nav mobile-hidden">
+                    <a href="#about">О компании</a>
+                    <a href="#services">Услуги</a>
+                    <a href="#portfolio">Портфолио</a>
+                    <a href="#clients">Клиенты</a>
+                    <a href="#contacts">Контакты</a>
+                </nav>
+                <div class="header__profile mobile-hidden">
+                    <span>Личный кабинет</span>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom flex">
+            <div class="header__tagline">
+                <h1>
+                    «Bideas»
+                </h1>
+                <br>
+                <p>Консалтинговая группа</p>
+                <br>
+                <p>Знание. Движение. Успех</p>
+            </div>
+            <div class="header__down-arrow">
+                <img src="img/down-arrow.svg" alt="Вниз">
+            </div>
+        </div>
+    </header>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+
+<script defer>
+    // let script = document.getElementsByTagName('script')
+
+    let style = document.getElementsByTagName('link')
+
+    let num = Math.floor(Math.random() * (99999 - 1) + 1)
+
+    let createdScript1 = document.createElement('script')
+    document.body.appendChild(createdScript1)
+    createdScript1.src = 'js/main.js?n=' + num
+
+    let createdScript2 = document.createElement('script')
+    document.body.appendChild(createdScript2)
+    createdScript2.src = 'js/contact.js?n=' + num
+
+
+    stylesArray = [...style]
+
+    stylesArray.forEach(item => {
+        if (item.href.includes('css/')) {
+            item.href = item.href + num
+        }
+    })
+
+</script>
+</body>
+</html>

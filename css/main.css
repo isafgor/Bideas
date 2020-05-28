@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    color: #B8B8B8;
+    font-family: Montserrat, sans-serif;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    overflow-y: scroll
+}
+
+.bideas {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 154px;
+    padding-right: 154px
+}
+
+.flex {
+    display: flex
+}
+
+.header {
+    width: 100%;
+    overflow: hidden;
+}
+
+.header__top {
+    height: 113px;
+    background: #A2195B;
+}
+
+.header__content {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header__top .saftech__logo {
+    margin-top: 13px
+}
+
+.header__bottom {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background: url("../img/header-background.png") no-repeat 50% 50%;
+    background-size: 100%;
+    height: 639px;
+}
+
+.header__profile {
+    font-size: 18px;
+    line-height: 155.19%;
+    text-align: center;
+    padding: 8px 0;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid #FFFFFF;
+}
+
+.header__profile span {
+    padding: 8px 23px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    /* identical to box height, or 26px */
+    color: #FFFFFF;
+
+}
+
+.header__desk-nav a {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    /* identical to box height, or 144% */
+    text-align: right;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 60px;
+}
+
+.header__desk-nav a:nth-last-of-type(1) {
+    margin-right: 0
+}
+
+.header__tagline {
+    margin: 50px auto 75px auto;
+    text-align: center
+}
+
+.header__tagline h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 112.2%;
+    /* or 73px */
+    text-align: center;
+    text-transform: uppercase;
+    color: #EDEDED;
+    margin: 0;
+
+}
+
+.header__tagline p {
+    line-height: 97.2%;
+    /* or 29px */
+    text-align: center;
+    color: #EEEEEE;
+    margin: 0;
+}
+
+.header__tagline p:nth-of-type(1) {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 97.2%;
+    text-align: center;
+    color: #EEEEEE;
+}
+
+.header__tagline p:nth-of-type(2) {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    /* identical to box height, or 144% */
+    text-transform: capitalize;
+    color: #FFFFFF;
+
+}
+
+.header__consultation {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 155.19%;
+    text-transform: uppercase;
+    color: #B8B8B8;
+    padding: 11px 41px;
+    width: 312px;
+    margin: 0 auto;
+    cursor: pointer
+}
+
+.header__nav ul li {
+    text-align: right;
+    list-style: none;
+    margin-bottom: 33px
+}
+
+.header__nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 0;
+    text-transform: uppercase;
+    color: #464646;
+    transition: 0.5s
+}
+
+.header__nav ul li a:hover {
+    color: #B8B8B8
+}
+
+.header__down-arrow {
+    position: absolute;
+    bottom: 68px;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    justify-content: center
+}
+
+.header__translate {
+    position: absolute;
+    bottom: 45px;
+    right: -34px;
+    transform: rotate(90deg)
+}
+
+.header__translate a {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 0;
+    text-transform: uppercase;
+    color: #B8B8B8;
+    text-decoration: none
+}
+
+.header__translate a:nth-of-type(1) {
+    margin-right: 31px
+}
+
+.header__translate a:nth-of-type(2) {
+    color: #464646
+}
