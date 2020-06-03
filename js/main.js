@@ -220,3 +220,90 @@ let openPhotoSwipe = function(payload) {
 
     gallery.init();
 };
+
+let logos = [
+    {
+        src: 'img/clients/mailru.png'
+    },
+    {
+        src: 'img/clients/mercedes.png'
+    },
+    {
+        src: 'img/clients/tnt.png'
+    },
+    {
+        src: 'img/clients/dom.png'
+    },
+    {
+        src: 'img/clients/ren.png'
+    },
+    {
+        src: 'img/clients/vk.png'
+    },
+    {
+        src: 'img/clients/ok.png'
+    },
+    {
+        src: 'img/clients/philips-logo.png'
+    },
+    {
+        src: 'img/clients/forester.png'
+    },
+    {
+        src: 'img/clients/lazurit.png'
+    },
+    {
+        src: 'img/clients/cy22.png'
+    },
+    {
+        src: 'img/clients/keedo.png'
+    },
+    {
+        src: 'img/clients/mnogo-mebeli.png'
+    },
+    {
+        src: 'img/clients/homeme.png'
+    },
+    {
+        src: 'img/clients/electrolux-2.png'
+    },
+    {
+        src: 'img/clients/robot.png'
+    },
+    {
+        src: 'img/clients/BLANCO-2.png'
+    },
+    {
+        src: 'img/clients/Gustavsberg.png'
+    },
+    {
+        src: 'img/clients/shatura.png'
+    },
+    {
+        src: 'img/clients/toris.png'
+    },
+    {
+        src: 'img/clients/lider.png'
+    },
+    {
+        src: 'img/clients/husqvarna.png'
+    },
+    {
+        src: 'img/clients/ampika.png'
+    },
+    {
+        src: 'img/clients/europlast.png'
+    },
+    {
+        src: 'img/clients/affresco.png'
+    },
+
+]
+
+let clients = document.getElementById('clients-logos')
+
+logos.forEach(item => {
+    let newImg = document.createElement('img')
+    newImg.setAttribute('src', item.src)
+    clients.appendChild(newImg)
+})
