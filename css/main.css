@@ -293,6 +293,154 @@ h2 {
     margin-left: 24px;
 }
 
+.services__content {
+    padding: 185px 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service__space {
+    margin-left: 36px;
+    color: #202020;
+}
+
+.services__names {
+    min-width: 400px;
+}
+
+.services__names ul {
+    margin: 65px 0 0 0;
+    padding: 0;
+    width: 100%;
+}
+
+.services__names ul li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 28px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 126.3%;
+    /* or 20px */
+    color: #202020;
+    cursor: pointer;
+}
+
+.services__names ul li.active {
+    font-weight: bold;
+    cursor: default;
+}
+
+.services__names ul li span {
+    margin-right: 15px;
+    color: #202020;
+}
+
+.services__names ul li:nth-of-type(1) span {
+    margin-right: 19px;
+}
+.services__names ul li:nth-of-type(4) span {
+    margin-right: 13px;
+}
+
+.services__description {
+    max-width: 500px;
+    padding-top: 10px;
+}
+
+.services__service {
+    display: none;
+}
+
+.services__service:nth-of-type(2) img {
+    margin-bottom: 35px;
+}
+
+.services__service:nth-of-type(2) h3,
+.services__service:nth-of-type(5) h3 {
+    margin: 0;
+}
+
+.services__service:nth-of-type(5) h3 {
+    margin-top: 30px;
+}
+
+.services__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.service__figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.service__figure img {
+    width: 64px;
+    margin-bottom: 18px;
+}
+
+.service__figure small {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 126.3%;
+    /* identical to box height, or 13px */
+    color: #1E1E1E;
+}
+
+.service__figure h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #202020;
+    margin: 0;
+}
+
+.services__service .service__figure p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 126.3%;
+    /* or 13px */
+    color: #202020;
+}
+
+.services__description h3 {
+    margin-top: 60px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 126.3%;
+    /* or 25px */
+    color: #202020;
+}
+
+.services__description p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 138.3%;
+    /* or 22px */
+    color: #202020;
+}
+
+.services__description span {
+    margin-right: 8px;
+    color: #202020;
+}
+
+.services__lines {
+    width: 100%;
+    margin-bottom: 48px;
+}
+
 .clients__content {
     padding: 185px 200px;
 }
