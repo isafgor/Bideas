@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Bideas - консалтинговая группа</title>
     <link rel="stylesheet" href="css/main.css?"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 </head>
 <body>
 <div id="bideas">
@@ -193,11 +194,29 @@
             </div>
             <img class="services__lines" src="img/services/lines.svg" alt="">
         </section>
+        <section id="portfolio" class="portfolio">
+            <div class="portfolio__content">
+                <div class="portfolio__video">
+                </div>
+                <div class="portfolio__video">
+                </div>
+                <div class="portfolio__video">
+                </div>
+                <div class="portfolio__video">
+                    <div class="portfolio__video--first"></div>
+                    <div class="portfolio__video--second"></div>
+                </div>
+                <div class="portfolio__video">
+                </div>
+                <div class="portfolio__video">
+                </div>
+            </div>
+        </section>
         <section id="clients" class="clients">
             <div class="clients__content bideas">
                 <h2>Клиенты</h2>
                 <div class="clients__logos" id="clients-logos">
-<!--                    Здесь картинки-->
+                    <!--Здесь картинки-->
                 </div>
             </div>
         </section>
@@ -261,7 +280,13 @@
 </div>
 
 <script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
+<script>
+    $(document).ready(function(){
+        $('.slider').bxSlider();
+    });
+</script>
 
 <script defer>
     // let script = document.getElementsByTagName('script')

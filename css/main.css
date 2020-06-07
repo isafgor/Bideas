@@ -441,6 +441,83 @@ h2 {
     margin-bottom: 48px;
 }
 
+.portfolio {
+    width: 100%;
+}
+
+.portfolio__content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.9fr 1.2fr 0.9fr;
+    grid-template-areas: "first first second second" "third third third fourth" "seven seven eight eight";
+    height: 1440px;
+}
+
+.portfolio__video,
+.portfolio__video--first,
+.portfolio__video--second {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    content: '';
+}
+
+.portfolio__video:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: ". . ." ". . .";
+    grid-area: first;
+    background-image: url("../img/portfolio/1.jpg");
+}
+.portfolio__video:nth-of-type(2) {
+    grid-area: second;
+    background-image: url("../img/portfolio/2.jpg");
+}
+.portfolio__video:nth-of-type(3) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: ". . ." ". . .";
+    grid-area: third;
+    background-image: url("../img/portfolio/3.png");
+}
+.portfolio__video:nth-of-type(4) {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "five five five" "six six six";
+    grid-area: fourth;
+}
+.portfolio__video--first {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "five five five" "six six six";
+    grid-area: five;
+    background-image: url("../img/portfolio/4.png");
+}
+
+.portfolio__video--second {
+    grid-area: six;
+    background-image: url("../img/portfolio/5.png");
+}
+
+.portfolio__video:nth-of-type(5) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: ". . ." ". . .";
+    grid-area: seven;
+    background-image: url("../img/portfolio/6.jpg");
+}
+.portfolio__video:nth-of-type(6) {
+    grid-area: eight;
+    background-image: url("../img/portfolio/7.jpg");
+}
+
 .clients__content {
     padding: 185px 200px;
 }
@@ -615,6 +692,10 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+.footer__creation a:nth-of-type(2) img {
+    margin-bottom: -20px;
 }
 
 .footer__btn-up {
