@@ -482,7 +482,7 @@ h2 {
     grid-template-rows: 1fr 1fr;
     grid-template-areas: ". . ." ". . .";
     grid-area: third;
-    background-image: url("../img/portfolio/3.png");
+    background-image: url("../img/portfolio/3.jpg");
 }
 .portfolio__video:nth-of-type(4) {
     display: grid;
