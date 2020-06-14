@@ -1,0 +1,235 @@
+.desktop-hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    h2 {
+        font-size: 25px;
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+
+    p {
+        font-size: 14px !important;
+    }
+
+    .mobile-hidden {
+        display: none !important;
+    }
+
+    .desktop-hidden {
+        display: block !important;
+    }
+
+    .bideas {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .header__top {
+        height: 79px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        right: 0;
+    }
+
+    .header__bottom {
+        margin-top: 79px;
+        height: 544px;
+    }
+
+    .header__bottom h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 150.3%;
+        /* or 68px */
+        color: #EEEEEE;
+    }
+
+    .header__tagline h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 150.3%;
+        /* or 68px */
+        color: #EEEEEE;
+    }
+
+    .header__tagline p:nth-of-type(1) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160.3%;
+        /* identical to box height, or 26px */
+        color: #EEEEEE;
+    }
+
+    .header__tagline p:nth-of-type(2) {
+        font-size: 14px;
+    }
+
+    .header__content {
+        border-bottom: 1px solid #EEEEEE;
+        padding: 0 25px;
+    }
+
+    .header__content img {
+        width: 33px;
+    }
+
+    .header__burger {
+        text-align: right;
+        width: 24px;
+        height: 24px;
+        position: relative;
+    }
+
+    .header__burger.header-burger__cross span:nth-of-type(1) {
+        position: absolute;
+        top: 7px;
+        width: 24px;
+        transform: rotate(45deg);
+    }
+
+    .header__burger.header-burger__cross span:nth-of-type(2) {
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 3px;
+        right: 2px;
+        width: 12px;
+    }
+
+    .header__burger.header-burger__cross span:nth-of-type(3) {
+        transform: rotate(-45deg);
+        width: 12px;
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+    }
+
+    .header__burger span {
+        position: absolute;
+        transition: .5s;
+        height: 1.5px;
+        display: block;
+        content: '';
+        border: 0;
+        background-color: #EEEEEE;
+        margin-bottom: 6.5px;
+    }
+
+    .header__burger span:nth-of-type(1) {
+        top: 0;
+        width: 19px;
+    }
+
+    .header__burger span:nth-of-type(2) {
+        width: 11px;
+        top: 8px;
+        right: 0;
+    }
+
+    .header__burger span:nth-of-type(3) {
+        width: 13px;
+        bottom: 0;
+        right: 5px;
+    }
+
+
+
+    .about__description {
+        flex-direction: column;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin: 25px 0;
+    }
+
+    .about__description img {
+        width: 339px;
+        margin-left: 0;
+    }
+
+    .about__description p {
+        font-size: 14px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .about__figures {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 45px;
+        padding-left: 45px;
+    }
+
+    .about__text {
+        margin: 0;
+    }
+
+    .about__text p {
+        font-size: 45px !important;
+        text-align: left;
+    }
+
+    .about__figure {
+        margin-bottom: 20px;
+    }
+
+    .about__figure h3 {
+        font-size: 50px;
+    }
+
+    .about__figure small {
+        font-size: 14px;
+    }
+
+
+
+    .services__content {
+        flex-direction: column;
+        padding: 59px 25px;
+    }
+
+    .services__content h2 {
+        margin-left: 0;
+        margin-bottom: 53px;
+    }
+
+    .services__names {
+        min-width: auto;
+    }
+
+    .services__lines {
+        display: none;
+    }
+
+    .services__description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services__service {
+        display: block !important;
+        margin-bottom: 74px;
+    }
+
+    .services__description h3 {
+        margin-top: 32px;
+        font-size: 16px;
+    }
+
+    .services__service:nth-of-type(1) img {
+        width: 65px;
+    }
+
+    .services__service:nth-of-type(2) img:nth-of-type(1) {
+        width: 291px;
+    }
+
+    .services__service:nth-of-type(2) img:nth-of-type(2) {
+        width: 346px;
+    }
+}
