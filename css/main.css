@@ -443,6 +443,7 @@ h2 {
 
 .portfolio {
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .portfolio__content {
@@ -450,8 +451,18 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.9fr 1.2fr 0.9fr;
-    grid-template-areas: "first first second second" "third third third fourth" "seven seven eight eight";
+    grid-template-areas: "first first second second" "third third third fourth" "seven seven eight eight" "nine nine nine ten";
     height: 1440px;
+}
+
+.portfolio__video {
+    min-height: 433px;
+    background-size: cover;
+    position: relative;
+}
+
+.portfolio__video.portfolio__big {
+    min-height: 574px;
 }
 
 .portfolio__video,
@@ -474,7 +485,7 @@ h2 {
 }
 .portfolio__video:nth-of-type(2) {
     grid-area: second;
-    background-image: url("../img/portfolio/2.jpg");
+    background-image: url("../img/portfolio/2.png");
 }
 .portfolio__video:nth-of-type(3) {
     display: grid;
@@ -482,7 +493,7 @@ h2 {
     grid-template-rows: 1fr 1fr;
     grid-template-areas: ". . ." ". . .";
     grid-area: third;
-    background-image: url("../img/portfolio/3.jpg");
+    background-image: url("../img/portfolio/3.png");
 }
 .portfolio__video:nth-of-type(4) {
     display: grid;
@@ -511,11 +522,69 @@ h2 {
     grid-template-rows: 1fr 1fr;
     grid-template-areas: ". . ." ". . .";
     grid-area: seven;
-    background-image: url("../img/portfolio/6.jpg");
+    background-image: url("../img/portfolio/6.png");
 }
+
 .portfolio__video:nth-of-type(6) {
     grid-area: eight;
-    background-image: url("../img/portfolio/7.jpg");
+    background-image: url("../img/portfolio/7.png");
+}
+
+.portfolio__video:nth-of-type(7) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: ". . ." ". . .";
+    grid-area: nine;
+    background-image: url("../img/portfolio/8.png");
+}
+
+.portfolio__video--seven {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "el el el" "tw tw tw";
+    grid-area: ten;
+}
+
+.portfolio__video--seven .portfolio__video--first {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "el el el" "tw tw tw";
+    grid-area: el;
+    background-image: url("../img/portfolio/9.png");
+}
+
+.portfolio__video--seven .portfolio__video--second {
+    grid-area: tw;
+    background-image: url("../img/portfolio/10.png");
+}
+
+.portfolio__video--first,
+.portfolio__video--second {
+    position: relative;
+}
+
+.portfolio__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.portfolio__text p {
+    color: #FFFFFF;
+}
+
+.clients {
+    margin-top: 500px;
 }
 
 .clients__content {
@@ -706,4 +775,113 @@ h2 {
     /* or 27px */
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.send-modal__mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    opacity: 0
+}
+
+.send-modal__window {
+    background: #181818;
+    /*border: 1px solid #B8B8B8;*/
+    width: 626px;
+    min-height: 474px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.send-modal__window div {
+    margin: 85px 0;
+    text-align: center;
+    max-width: 60%
+}
+
+.send-modal__window div p {
+    color: #7A7A7A;
+    /*margin-top: 10px;*/
+    margin-bottom: 33px
+}
+
+.send-modal__window h3 {
+    line-height: 110%
+}
+
+.send-modal__window div button {
+    background: transparent;
+    border: 2px solid;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 13px 33px;
+    /*margin-top: 22px;*/
+    cursor: pointer;
+    text-transform: uppercase
+}
+
+.send-modal__window div img {
+    margin-bottom: 20px
+}
+
+.send-modal__window div button {
+    width: 100%
+}
+
+.send-modal__cross {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #181818;
+    width: 75px;
+    height: 75px;
+    /*border: 1px solid #B8B8B8;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border-radius: 50%;*/
+    cursor: pointer
+}
+
+#modal3 p {
+    text-align: left;
+}
+
+#modal3 .send-modal__window {
+    width: 1101px;
+    padding: 143px;
+}
+
+#modal3 .send-modal__window div {
+    max-width: none;
+    margin: 0;
+}
+
+#modal3 .cost__idea img {
+    width: 410px;
+    margin-top: 125px;
+}
+
+#modal3 h2 {
+    text-align: left;
+    margin-top: 0;
+}
+
+#modal3 .cost__idea {
+    align-items: center;
+}
+
+#modal3 button {
+    width: 301px;
+    margin-top: 60px;
 }

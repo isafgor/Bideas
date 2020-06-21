@@ -228,21 +228,73 @@
         </section>
         <section id="portfolio" class="portfolio mobile-hidden">
             <div class="portfolio__content">
-                <div class="portfolio__video">
+                <div class="portfolio__video" onclick="displayModal('modal3','flex')">
+                    <div class="portfolio__text">
+                        <p>Шоу «Паранормальных» Youtube</p>
+                        <p>2016</p>
+                    </div>
                 </div>
                 <div class="portfolio__video">
+                    <div class="portfolio__text">
+                        <p>HULU/Анализ рынка мобильных приложений (MENA, CIS)</p>
+                        <p>2019</p>
+                    </div>
+                </div>
+                <div class="portfolio__video portfolio__big">
+                    <div class="portfolio__text">
+                        <p>Шоу «Ремонт по-честному» Рен-тв </p>
+                        <p>2016</p>
+                    </div>
                 </div>
                 <div class="portfolio__video">
+                    <div class="portfolio__video--first">
+                        <div class="portfolio__text">
+                            <p>Шоу «Моя Малая Может» Mail.ru Group </p>
+                            <p>2019</p>
+                        </div>
+                    </div>
+                    <div class="portfolio__video--second">
+                        <div class="portfolio__text">
+                            <p>МИСТРАЛЬ/Прогнозирование, сегментация, нишевой анализ рынка круп (Россия)</p>
+                            <p>2019</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="portfolio__video">
-                    <div class="portfolio__video--first"></div>
-                    <div class="portfolio__video--second"></div>
+                    <div class="portfolio__text">
+                        <p>СЕЛЕБРУМ РУС/Разработка продуктовой стратегии и стандартов клиентского сервиса</p>
+                        <p>2020</p>
+                    </div>
                 </div>
                 <div class="portfolio__video">
+                    <div class="portfolio__text">
+                        <p>Шоу «Мужчина Моей Еды» Mail.ru Group</p>
+                        <p>2019</p>
+                    </div>
                 </div>
-                <div class="portfolio__video">
+
+                <div class="portfolio__video portfolio__big">
+                    <div class="portfolio__text">
+                        <p>Реклама «Husqvarna»</p>
+                        <p>2017</p>
+                    </div>
+                </div>
+                <div class="portfolio__video--seven">
+                    <div class="portfolio__video--first">
+                        <div class="portfolio__text">
+                            <p>РОСАТОМ/Анализ рынка  «Умных городов» (Россия, мир)» </p>
+                            <p>2019</p>
+                        </div>
+                    </div>
+                    <div class="portfolio__video--second">
+                        <div class="portfolio__text">
+                            <p>Реклама «BLANCO»</p>
+                            <p>2017</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </section>
         <section id="clients" class="clients mobile-hidden">
             <div class="clients__content bideas">
@@ -309,6 +361,60 @@
             </div>
         </div>
     </footer>
+    <div id="#modals">
+        <div class="send-modal__mask" id="modal">
+            <div class="send-modal__window">
+                    <span class="send-modal__cross" onclick="displayModal('modal','none')">
+                        <img src="img/cross.svg">
+                    </span>
+                <div>
+                    <img src="img/mail.svg" width="340"/>
+                    <h3>Отправлено</h3>
+                    <p>Заявка уже у нас.
+                        <br>
+                        Скоро выйдем на связь.
+                    </p>
+                    <button onclick="displayModal('modal','none')">ОК</button>
+                </div>
+            </div>
+        </div>
+        <div class="send-modal__mask" id="modal2">
+            <div class="send-modal__window">
+            <span class="send-modal__cross" onclick="displayModal('modal2','none')">
+                <img src="img/cross.svg">
+            </span>
+                <div class="send-modal__content">
+                    <h3>Рассчитать стоимость проекта</h3>
+                    <p>
+                        Оставьте заявку и мы свяжемся
+                        <br>
+                        с вами в ближайшее время
+                    </p>
+                    <form method="POST" action="contact.php" class="contacts__form" autocomplete="off">
+                        <input id="name-modal" class="contacts__typing contacts__input" name="name" type="text"
+                               placeholder="Имя" required>
+                        <input id="email-modal" class="contacts__typing contacts__input" name="email" type="text"
+                               placeholder="Почта или телефон" required>
+                        <textarea id="message-modal" class="contacts__typing contacts__textarea" name="message"
+                                  placeholder="Несколько слов о проекте" required></textarea>
+                    </form>
+                    <button type="button" id="modal-send" onclick="displayModal('modal2','none')" class="button">Отправить</button>
+                </div>
+            </div>
+        </div>
+        <div class="send-modal__mask" id="modal3">
+            <div class="send-modal__window">
+                <span class="send-modal__cross" onclick="displayModal('modal3','none')">
+                    <img src="img/cross.svg">
+                </span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nRTJd91G04Q" frameborder="0" allowfullscreen></iframe>
+                <div>
+
+                    <button class="button" onclick="displayModal('modal3','none')">ОК</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="js/jquery.min.js"></script>
