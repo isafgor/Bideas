@@ -35,12 +35,19 @@ $("body").on('click', '[href*="#"]', function(e){
 //     }
 // }
 
+function openVideo (id, url) {
+    let frame = document.getElementById('video')
+    frame.setAttribute('src', url)
+
+    displayModal(id, 'flex')
+}
+
 function displayModal (id, bool) {
     let body = document.body
 
     let modal = document.getElementById(id)
 
-    let saftech = document.getElementById('ru')
+    let bideas = document.getElementById('bideas')
 
 
     if (bool !== 'none') {
@@ -51,11 +58,11 @@ function displayModal (id, bool) {
             modal.style.opacity = '1'
         }, 0)
 
-        saftech.style.filter = 'blur(2px)'
+        bideas.style.filter = 'blur(2px)'
         modal.style.display = bool
     } else {
         modal.style.opacity = '0'
-        saftech.style.filter = 'none'
+        bideas.style.filter = 'none'
 
         setTimeout(() => {
             modal.style.display = bool

@@ -228,7 +228,7 @@
         </section>
         <section id="portfolio" class="portfolio mobile-hidden">
             <div class="portfolio__content">
-                <div class="portfolio__video" onclick="displayModal('modal3','flex')">
+                <div class="portfolio__video" onclick="openVideo('modal3','https://www.youtube.com/embed/nRTJd91G04Q')">
                     <div class="portfolio__text">
                         <p>Шоу «Паранормальных» Youtube</p>
                         <p>2016</p>
@@ -361,57 +361,19 @@
             </div>
         </div>
     </footer>
-    <div id="#modals">
-        <div class="send-modal__mask" id="modal">
-            <div class="send-modal__window">
-                    <span class="send-modal__cross" onclick="displayModal('modal','none')">
-                        <img src="img/cross.svg">
-                    </span>
-                <div>
-                    <img src="img/mail.svg" width="340"/>
-                    <h3>Отправлено</h3>
-                    <p>Заявка уже у нас.
-                        <br>
-                        Скоро выйдем на связь.
-                    </p>
-                    <button onclick="displayModal('modal','none')">ОК</button>
-                </div>
-            </div>
-        </div>
-        <div class="send-modal__mask" id="modal2">
-            <div class="send-modal__window">
-            <span class="send-modal__cross" onclick="displayModal('modal2','none')">
-                <img src="img/cross.svg">
-            </span>
-                <div class="send-modal__content">
-                    <h3>Рассчитать стоимость проекта</h3>
-                    <p>
-                        Оставьте заявку и мы свяжемся
-                        <br>
-                        с вами в ближайшее время
-                    </p>
-                    <form method="POST" action="contact.php" class="contacts__form" autocomplete="off">
-                        <input id="name-modal" class="contacts__typing contacts__input" name="name" type="text"
-                               placeholder="Имя" required>
-                        <input id="email-modal" class="contacts__typing contacts__input" name="email" type="text"
-                               placeholder="Почта или телефон" required>
-                        <textarea id="message-modal" class="contacts__typing contacts__textarea" name="message"
-                                  placeholder="Несколько слов о проекте" required></textarea>
-                    </form>
-                    <button type="button" id="modal-send" onclick="displayModal('modal2','none')" class="button">Отправить</button>
-                </div>
-            </div>
-        </div>
-        <div class="send-modal__mask" id="modal3">
-            <div class="send-modal__window">
+</div>
+<div id="#modals">
+    <div class="send-modal__mask" id="modal3">
+        <div class="send-modal__window">
                 <span class="send-modal__cross" onclick="displayModal('modal3','none')">
-                    <img src="img/cross.svg">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="2.32046" y1="2.2168" x2="24.1806" y2="24.077" stroke="#A2195B" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="1" y1="-1" x2="31.9149" y2="-1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 25.8438 2.2168)" stroke="#A2195B" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
                 </span>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/nRTJd91G04Q" frameborder="0" allowfullscreen></iframe>
-                <div>
-
-                    <button class="button" onclick="displayModal('modal3','none')">ОК</button>
-                </div>
+            <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <div>
+                <button class="button" onclick="displayModal('modal3','none')">ОК</button>
             </div>
         </div>
     </div>

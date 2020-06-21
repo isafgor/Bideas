@@ -792,7 +792,7 @@ h2 {
 }
 
 .send-modal__window {
-    background: #181818;
+    background: #FFFFFF;
     /*border: 1px solid #B8B8B8;*/
     width: 626px;
     min-height: 474px;
@@ -821,7 +821,8 @@ h2 {
 
 .send-modal__window div button {
     background: transparent;
-    border: 2px solid;
+    border: 2px solid #A2195B;
+    color: #A2195B;
     font-weight: 600;
     font-size: 18px;
     padding: 13px 33px;
@@ -840,9 +841,9 @@ h2 {
 
 .send-modal__cross {
     position: absolute;
+    color: #A2195B;
     right: 0;
     top: 0;
-    background: #181818;
     width: 75px;
     height: 75px;
     /*border: 1px solid #B8B8B8;*/
@@ -859,13 +860,18 @@ h2 {
 
 #modal3 .send-modal__window {
     width: 1101px;
-    padding: 143px;
+    padding: 100px;
 }
 
 #modal3 .send-modal__window div {
     max-width: none;
     margin: 0;
 }
+#modal3 iframe {
+    width: 100%;
+    min-height: 400px;
+}
+
 
 #modal3 .cost__idea img {
     width: 410px;
