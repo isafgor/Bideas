@@ -295,6 +295,7 @@ h2 {
 
 .services__content {
     padding: 185px 200px;
+    min-height: 1000px;
     display: flex;
     justify-content: space-between;
 }

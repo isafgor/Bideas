@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteCond %{SERVER_NAME} ^www\. [NC,OR]
+RewriteCond %{HTTPS} ^off$ [NC]
+RewriteCond %{SERVER_NAME} ^(www\.)?(.*) [NC]
+RewriteRule ^/?(.*) https://%2/$1 [L,R=301,NE,QSA]
+
+RewriteBase /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
+RewriteRule ^([^.]+)\.html$ http://www.gral.ru/$1 [R=301,L]
+RewriteCond %{REQUEST_URI} !(\.[^./]+)$
+RewriteCond %{REQUEST_fileNAME} !-d
+RewriteCond %{REQUEST_fileNAME} !-f
+RewriteRule (.*) /$1.html [L]
