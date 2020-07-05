@@ -192,6 +192,26 @@
 
 
 
+    .portfolio {
+        margin-bottom: 60px;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 60px;
+    }
+
+    .portfolio__content {
+        display: flex !important;
+        flex-direction: column;
+        height: auto !important;
+    }
+
+    .portfolio__video {
+        min-height: 400px !important;
+        max-height: 400px !important;
+    }
+
+
     .services__content {
         flex-direction: column;
         padding: 59px 25px;
