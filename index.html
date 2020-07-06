@@ -31,6 +31,27 @@
                     <span></span>
                     <span></span>
                 </div>
+                <div id="burger-mask" class="burger-mask desktop-hidden">
+                    <div class="burger-menu">
+                        <div class="burger-menu__content">
+                            <div class="burger-menu__item">
+                                <a href="#about">О компании</a>
+                            </div>
+                            <div class="burger-menu__item">
+                                <a href="#services">Услуги</a>
+                            </div>
+                            <div class="burger-menu__item">
+                                <a href="#portfolio">Портфолио</a>
+                            </div>
+                            <div class="burger-menu__item">
+                                <a href="#clients">Клиенты</a>
+                            </div>
+                            <div class="burger-menu__item">
+                                <a href="#contacts">Контакты</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="header__bottom flex">
@@ -231,7 +252,7 @@
             <img class="services__lines" src="img/services/lines.svg" alt="">
         </section>
         <section id="portfolio" class="portfolio">
-            <h2>Портфолио</h2>
+            <h2 class="desktop-hidden">Портфолио</h2>
             <div class="portfolio__content">
                 <div class="portfolio__video" onclick="openVideo('modal3','https://www.youtube.com/embed/tsHqwQPbshM')">
                     <div class="portfolio__text">
@@ -313,11 +334,11 @@
     <footer id="contacts" class="contacts">
         <div class="contacts__connect">
             <h2>Свяжитесь с нами</h2>
-            <form action="" class="contacts__form">
-                <input type="text" class="contacts__input" placeholder="Имя">
-                <input type="text" class="contacts__input" placeholder="E-mail">
-                <textarea type="text" class="contacts__textarea" placeholder="Ваше сообщение"></textarea>
-                <button>
+            <form method="POST" action="contact.php" class="contacts__form">
+                <input type="text" class="contacts__input" id="name-modal" name="name" placeholder="Имя">
+                <input type="text" class="contacts__input" id="email-modal" name="email" placeholder="E-mail">
+                <textarea type="text" class="contacts__textarea" id="message-modal" name="message" placeholder="Ваше сообщение"></textarea>
+                <button id="modal-send" type="button">
                     Отправить
                     <img src="./img/arrow-send.png" class="mobile-hidden" alt="">
                 </button>

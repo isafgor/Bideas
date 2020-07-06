@@ -75,27 +75,28 @@ function displayModal (id, bool) {
 
 // Burger menu
 
-// let burgerOn = false
-// let burger = document.getElementById('burger')
-// let mask = document.getElementById('burger-mask')
-//
-// function burgerMenu () {
-//     burgerOn = !burgerOn
-//
-//     if (burgerOn) {
-//         mask.style.display = 'block'
-//         burger.classList.add('header-burger__cross')
-//         setTimeout(() => {
-//             mask.style.opacity = '1'
-//         }, 0)
-//     } else {
-//         mask.style.opacity = '0'
-//         burger.classList.remove('header-burger__cross')
-//         setTimeout(() => {
-//             mask.style.display = 'none'
-//         }, 500)
-//     }
-// }
+let burgerOn = false
+let burger = document.getElementById('burger')
+let mask = document.getElementById('burger-mask')
+
+function burgerMenu () {
+    burgerOn = !burgerOn
+
+
+    if (burgerOn) {
+        mask.style.display = 'block'
+        burger.classList.add('header-burger__cross')
+        setTimeout(() => {
+            mask.style.opacity = '1'
+        }, 0)
+    } else {
+        mask.style.opacity = '0'
+        burger.classList.remove('header-burger__cross')
+        setTimeout(() => {
+            mask.style.display = 'none'
+        }, 500)
+    }
+}
 
 // navigation ? window.onscroll = scrollFunction : false;
 
