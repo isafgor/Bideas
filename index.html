@@ -23,7 +23,7 @@
                     <a href="#clients">Клиенты</a>
                     <a href="#contacts">Контакты</a>
                 </nav>
-                <div class="header__profile mobile-hidden">
+                <div class="header__profile mobile-hidden" onclick="displayModal('modal1','flex')">
                     <span>Личный кабинет</span>
                 </div>
                 <div id="burger" class="header__burger desktop-hidden" onclick="burgerMenu()">
@@ -325,8 +325,11 @@
         <section id="clients" class="clients">
             <div class="clients__content bideas">
                 <h2>Клиенты</h2>
-                <div class="clients__logos" id="clients-logos">
+                <div class="clients__logos mobile-hidden" id="clients-logos">
                     <!--Здесь картинки-->
+                </div>
+                <div class="clients__logos desktop-hidden">
+                    <img class="clients__mobile" src="img/logos.png" alt="">
                 </div>
             </div>
         </section>
@@ -374,7 +377,7 @@
                     </p>
                     <p>
                         <a href=""><img src="img/icons/inst.svg" alt=""></a>
-                        <a href=""><img src="img/icons/fb.svg" alt=""></a>
+                        <a href="https://www.facebook.com/groups/1715023775415296/"><img src="img/icons/fb.svg" alt=""></a>
                     </p>
                 </div>
                 <div class="footer__creation">
@@ -400,6 +403,47 @@
             <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
             <div>
                 <button class="button" onclick="displayModal('modal3','none')">ОК</button>
+            </div>
+        </div>
+    </div>
+    <div class="send-modal__mask" id="modal2">
+        <div class="send-modal__window">
+                <span class="send-modal__cross" onclick="displayModal('modal2','none')">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="2.32046" y1="2.2168" x2="24.1806" y2="24.077" stroke="#A2195B" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="1" y1="-1" x2="31.9149" y2="-1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 25.8438 2.2168)" stroke="#A2195B" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </span>
+            <div class="send-modal__body">
+                <div class="send-modal__headline">Отправлено</div>
+                <p class="send-modal__text">
+                    Спасибо за ваше обращение!
+                    <br>
+                    Ожидайте ответ на указанную электронную почту.
+                </p>
+                <div>
+                    <button class="button" onclick="displayModal('modal2','none')">ОК</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="send-modal__mask" id="modal1">
+        <div class="send-modal__window">
+                <span class="send-modal__cross" onclick="displayModal('modal1','none')">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="2.32046" y1="2.2168" x2="24.1806" y2="24.077" stroke="#A2195B" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="1" y1="-1" x2="31.9149" y2="-1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 25.8438 2.2168)" stroke="#A2195B" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </span>
+            <div class="send-modal__body">
+                <div class="send-modal__headline">Войти</div>
+                <form>
+                    <input type="text" placeholder="EMAIL">
+                    <input type="password" placeholder="ПАРОЛЬ">
+                </form>
+                <div>
+                    <button class="button" onclick="displayModal('modal1','none')">Войти</button>
+                </div>
             </div>
         </div>
     </div>

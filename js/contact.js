@@ -25,7 +25,7 @@ $(document).ready(function() {
                 // $('#tel-desktop').val('');
                 $('#email-modal').val('');
                 $('#message-modal').val('');
-                // displayModal('modal','flex');
+                displayModal('modal2','flex');
             }
         });
     });

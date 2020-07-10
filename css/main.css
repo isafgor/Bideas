@@ -805,9 +805,7 @@ h2 {
 }
 
 .send-modal__window div {
-    margin: 85px 0;
     text-align: center;
-    max-width: 60%
 }
 
 .send-modal__window div p {
@@ -820,24 +818,40 @@ h2 {
     line-height: 110%
 }
 
-.send-modal__window div button {
-    background: transparent;
-    border: 2px solid #A2195B;
-    color: #A2195B;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 13px 33px;
-    /*margin-top: 22px;*/
-    cursor: pointer;
-    text-transform: uppercase
+.send-modal__window form {
+    display: flex;
+    flex-direction: column;
+    margin: 45px 0;
 }
+
+.send-modal__window form input {
+    border: 0;
+    border-bottom: 1px solid #2B2B2B;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 126.3%;
+    /* or 20px */
+    text-transform: uppercase;
+    color: #202020;
+    outline: none !important;
+    width: 375px;
+    height: 32px;
+    margin-bottom: 29px;
+}
+
+.send-modal__window button {
+    background: linear-gradient(90deg, #EF1C54 4.41%, #B80465 94.83%);
+    color: #FFFFFF;
+    border: 0;
+    width: 301px;
+    height: 45px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 
 .send-modal__window div img {
     margin-bottom: 20px
-}
-
-.send-modal__window div button {
-    width: 100%
 }
 
 .send-modal__cross {
@@ -853,6 +867,44 @@ h2 {
     align-items: center;
     /*border-radius: 50%;*/
     cursor: pointer
+}
+
+.send-modal__headline {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 97.2%;
+    text-align: center;
+    color: #B22453;
+}
+
+.send-modal__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
+    text-align: center;
+    color: #1E1E1E !important;
+    margin: 40px 0 !important;
+}
+
+.send-modal__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+    width: 100%;
+    height: 100%;
+}
+
+#modal1 .send-modal__window {
+    text-align: left;
+}
+
+#modal2 .send-modal__window {
+    min-height: auto;
+    height: 389px;
+
 }
 
 #modal3 p {
